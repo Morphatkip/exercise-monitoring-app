@@ -1,5 +1,10 @@
 .App {
-  text-align: center;
+  min-height: 100vh;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .App-logo {
@@ -35,4 +40,133 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 1rem;
+  background-color: grey;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+button:hover {
+  background-color: #0062cc;
+}
+
+input {
+  width: 50px;
+}
+.home-container {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4px;
+  padding: 20px;
+}
+
+.create-button {
+  float: right;
+  background-color: darkgrey;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 5px 3px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width: 58px;
+  float: right;
+}
+.button-wrap {
+  width: 100%;
+  background-color: #0062cc;
+}
+.btn-exercise {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  float: right;
+  margin-top: 0.5rem;
+  margin-bottom: 10px;
+}
+
+.btn-exercise:hover {
+  background-color: #11707d;
+  border-color: #11707d;
+}
+
+table {
+  width: 100%;
+  margin-top: 100px;
+  margin: 10px auto 10px auto;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border-collapse: collapse;
+  border: 1px solid #dee2e6;
+}
+
+.hover-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.thead {
+  background-color: #e9ecef;
+}
+
+.th {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.tbody {
+  vertical-align: middle;
+}
+
+.tbody tr:nth-of-type(odd) {
+  background-color: #f2f2f2;
+}
+
+.ExerciseRow td:last-child {
+  white-space: nowrap;
+}
+
+.form-wrap {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-wrap:focus {
+  color: #495057;
+  background-color: #fff;
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+label {
+  font-weight: bold;
 }
